@@ -6,12 +6,8 @@ let gol = "Volkswagen Gol"
 let uno = "Fiat Uno"
 let xc40 = "Volvo XC40"
 
-let cars = [c180, gol, uno, xc40]
-
-print(cars)
-
-print(cars[0]) // Para acessar os valores de array, basta selecionar o índice desejado.
-print(cars[2])
+let cars = [c180, gol, uno, xc40] // Array
+print(cars[2]) // Para acessar os valores de array, basta selecionar o índice desejado.
 
 
 /* 
@@ -19,12 +15,11 @@ print(cars[2])
     - Não há ordenação para seus itens;
     - Os itens não se repetem.
 */
-let carsWithSet = Set([c180, gol, uno, uno, xc40])
-
+let carsWithSet = Set([c180, gol, uno, uno, xc40]) // Set
 print(carsWithSet)
 
 /* Tuples - Com ela é possível armazenar vários valores em uma única variável */
-let mercedesC180 = (factory:"Mercedes", model:"C180")
+let mercedesC180 = (factory:"Mercedes", model:"C180") // Tuples
 let vwGol = (factory:"Volkswagen", model:"Gol")
 let fiatUno = (factory:"Fiat", model:"Uno")
 let volvoXc40 = (factory:"Volvo", model:"XC180")
@@ -40,13 +35,13 @@ print(vwGol.1)
     relação "chave-valor" 
  */
 
- let carsCategorySample = [
+let carsCategorySample = [ // Dictionary
     "carroDeEntrada": uno,
     "carroIntermediario": gol,
     "carroClass": c180 
- ]
+]
 
- print(carsCategorySample["carroDeEntrada"])
+print(carsCategorySample["carroDeEntrada"])
 
 // Experimente fazer a busca usando um valor default pro caso de não encontrar a chave
 print(carsCategorySample["carroIntermediario", default: "Sem itens compatíveis"])
@@ -60,7 +55,7 @@ var strIntDict = [String: Int]()
 var list = Array<Int>()
 
 /* Enums - Enumeradores é uma forma mais simples e organizada de definir e usar valores */
-enum Cars {
+enum Cars { // Enum
     case popular
     case top
 }
@@ -72,7 +67,7 @@ let carsCategoryEnum = [
 print(carsCategoryEnum[Cars.popular, default: "Não localizado"])
 
 /* Enums associados */
-enum BestCars {
+enum BestCars { // Associated enum
     case economy(who: String)
     case comfort(who: String)
     case offRoad
@@ -82,21 +77,20 @@ BestCars.economy(who: uno)
 BestCars.comfort(who: c180)
 print(BestCars.comfort)
 
+// Quando o enum de inteiro não tem valor atribuído, este inicia em 0 (zero)
 enum TypeCar: Int {
     case passeio
     case pickup
     case minivan
     case suv
 }
-
 print(TypeCar(rawValue: 0))
 
-
+// Quando o enum de inteiro possui algum valor atribuído, segue sequencialmente a partir de sua atribuição
 enum ColorCar: Int {
     case prata = 15
     case bordo
     case vermelho
     case amarelo
 }
-
 print(ColorCar(rawValue: 16))

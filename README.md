@@ -8,3 +8,6 @@ Welcome my notes from course about mobile architecture. This works like a physic
 
 #### Lesson 2 - Lists, Tuples, Dictionaries, Matrices, Enums ####
 
+[Creation with values and print](lesson2/lesson2/lesson2.swift)
+Creation without values
+Handling each type
