@@ -9,5 +9,6 @@ Welcome my notes from course about mobile architecture. This works like a physic
 #### Lesson 2 - Arrays, Tuples, Dictionaries, Sets, Enums ####
 
 [Overview - creations and prints](lesson2/lesson2.swift)
+
 [Handling Arrays](lesson2/array.swift)
 
