@@ -12,3 +12,5 @@ Welcome my notes from course about mobile architecture. This works like a physic
 
 [Handling Arrays](lesson2/array.swift)
 
+[Handling Sets](lessons2/sets.swift)
+
