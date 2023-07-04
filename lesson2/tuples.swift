@@ -44,7 +44,6 @@ bikeStoreArray.forEach {
 let sampleTupleInTuple = ("KRW", "TZ", 500, ("Azul e preto", "Cambio Shimano", "Freios a disco"))
 print("We have a \(sampleTupleInTuple.0), cost $\(sampleTupleInTuple.2), on color \(sampleTupleInTuple.3.0)")
 
-// Dictionary on tuple
+// Dictionary in tuple
 let sampleDictInTuple = ("Soul", "SL329", 600, ["color": "Preto e laranja", "machine": "Shimano", "breaks": "v-break"])
 print("We have a \(sampleDictInTuple.0) from $\(sampleDictInTuple.2), color \(sampleDictInTuple.3["color"] ?? "")")
-
