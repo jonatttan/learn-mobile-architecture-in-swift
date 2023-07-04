@@ -15,3 +15,5 @@ Welcome my notes from course about mobile architecture. This works like a physic
 [Handling Sets](lesson2/sets.swift)
 
 [Handling Tuples](lesson2/tuples.swift)
+
+[Handling Dictionary](lesson2/dictionary.swift)
