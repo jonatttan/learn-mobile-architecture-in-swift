@@ -19,3 +19,12 @@ Welcome my notes from course about mobile architecture. This works like a physic
 [Handling Dictionary](lesson2/dictionary.swift)
 
 [Handling Enum](lesson2/enum.swift)
+
+#### Searches ####
+
+Handling Ternary conditionals
+
+Handling Higher order functions
+
+Handling closures completions
+
