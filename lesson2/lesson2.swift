@@ -1,25 +1,24 @@
 import UIKit
 
-/* Arrays - Pode-se dizer que se trata de uma matriz/ coleção de valores */
+/* Arrays - It can be said that this is an array/ collection of values */
 let c180 = "Mercedes-benz C180"
 let gol = "Volkswagen Gol"
 let uno = "Fiat Uno"
 let xc40 = "Volvo XC40"
 
-let cars = [c180, gol, uno, xc40] // Array
-print(cars[2]) // Para acessar os valores de array, basta selecionar o índice desejado.
-
+let cars = [c180, gol, uno, xc40]
+print(cars[2]) // To access array values, simple select the desired index.
 
 /* 
-    Set - Se trata de um tipo parecido com o anterior, porém, com duas distinções:
-    - Não há ordenação para seus itens;
-    - Os itens não se repetem.
+    Set - It is a similar type to the previous one, however, with two distinctions:
+    - There is no ordering for your items;
+    - Items do not repeat
 */
-let carsWithSet = Set([c180, gol, uno, uno, xc40]) // Set
+let carsWithSet = Set([c180, gol, uno, uno, xc40])
 print(carsWithSet)
 
-/* Tuples - Com ela é possível armazenar vários valores em uma única variável */
-let mercedesC180 = (factory:"Mercedes", model:"C180") // Tuples
+/* Tuples - It allows you to store multiple values in a single variable */
+let mercedesC180 = (factory:"Mercedes", model:"C180")
 let vwGol = (factory:"Volkswagen", model:"Gol")
 let fiatUno = (factory:"Fiat", model:"Uno")
 let volvoXc40 = (factory:"Volvo", model:"XC180")
@@ -31,11 +30,11 @@ print(vwGol.0)
 print(vwGol.1)
 
 /* 
-    Dictionaries - É como matrizes, porém o armazenamento das informações se dá por
-    relação "chave-valor" 
- */
+    Dictionaries - It's like matrices, but the storage of information is done by 
+    "key-value" relationship 
+*/
 
-let carsCategorySample = [ // Dictionary
+let carsCategorySample = [
     "carroDeEntrada": uno,
     "carroIntermediario": gol,
     "carroClass": c180 
@@ -43,10 +42,10 @@ let carsCategorySample = [ // Dictionary
 
 print(carsCategorySample["carroDeEntrada"])
 
-// Experimente fazer a busca usando um valor default pro caso de não encontrar a chave
+// Try doing the search using a default value in case you can't find the key
 print(carsCategorySample["carroIntermediario", default: "Sem itens compatíveis"])
 
-/* Inicializando colecoes, matrizes, listas vazias */
+/* Initializing collections, matrices, empty lists */
 var intList = [Int]()
 var strList = [String]()
 var setList = Set<String>()
@@ -54,8 +53,8 @@ var dictionary = [String: String]()
 var strIntDict = [String: Int]()
 var list = Array<Int>()
 
-/* Enums - Enumeradores é uma forma mais simples e organizada de definir e usar valores */
-enum Cars { // Enum
+/* Enums - Enumarators is a simpler and more organized way of defining and using values */
+enum Cars {
     case popular
     case top
 }
@@ -66,8 +65,8 @@ let carsCategoryEnum = [
 ]
 print(carsCategoryEnum[Cars.popular, default: "Não localizado"])
 
-/* Enums associados */
-enum BestCars { // Associated enum
+/* Associated enums */
+enum BestCars {
     case economy(who: String)
     case comfort(who: String)
     case offRoad
@@ -77,7 +76,7 @@ BestCars.economy(who: uno)
 BestCars.comfort(who: c180)
 print(BestCars.comfort)
 
-// Quando o enum de inteiro não tem valor atribuído, este inicia em 0 (zero)
+// When the integer enum has no assigned value, it starts at 0 (zero)
 enum TypeCar: Int {
     case passeio
     case pickup
@@ -86,7 +85,7 @@ enum TypeCar: Int {
 }
 print(TypeCar(rawValue: 0))
 
-// Quando o enum de inteiro possui algum valor atribuído, segue sequencialmente a partir de sua atribuição
+// When the integer enum has some value assigned, it follows sequentially from its assignment.
 enum ColorCar: Int {
     case prata = 15
     case bordo
