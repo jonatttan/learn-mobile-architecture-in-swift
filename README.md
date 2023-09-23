@@ -22,8 +22,8 @@ Welcome my notes from course about mobile architecture. This works like a physic
 
 #### Lesson 3 - Function with default values, Variable functions, Ternary conditionals ####
 
-[Handling functions with default values](lesson3/functionWithDefaultValues.swift)
+[Handling Functions with default values](lesson3/functionWithDefaultValues.swift)
 
 [Handling Variable functions](lesson3/variableFunctions.swift)
 
-[Handling functions](lesson3/ternaryConditionals.swift)
+[Handling Ternary conditionals](lesson3/ternaryConditionals.swift)
