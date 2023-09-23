@@ -19,3 +19,11 @@ Welcome my notes from course about mobile architecture. This works like a physic
 [Handling Dictionary](lesson2/dictionary.swift)
 
 [Handling Enum](lesson2/enum.swift)
+
+#### Lesson 3 - Function with default values, Variable functions, Ternary conditionals ####
+
+[Handling functions with default values](lesson3/functionWithDefaultValues.swift)
+
+[Handling Variable functions](lesson3/variableFunctions.swift)
+
+[Handling functions](lesson3/ternaryConditionals.swift)
