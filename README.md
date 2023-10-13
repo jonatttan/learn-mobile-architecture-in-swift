@@ -27,3 +27,10 @@ Welcome my notes from course about mobile architecture. This works like a physic
 [Handling Variable functions](lesson3/variableFunctions.swift)
 
 [Handling Ternary conditionals](lesson3/ternaryConditionals.swift)
+
+
+#### Lesson 4 - Throw functions, Repeat loops ####
+
+[Handling Throw functions](lesson4/throwFunctions.swift)
+
+[Handling Repeat loops](lesson4/repeatLoops.swift)
